@@ -2,13 +2,13 @@ const schema = {
   name: "resource",
   title: "Resource",
   type: "document",
-  field: [
+  fields: [
     {
       name: "title",
       title: "Title",
       type: "string",
       require,
-      validation: (Rule: any) => Rule.require(),
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: "slug",
@@ -20,7 +20,7 @@ const schema = {
       name: "downloadLink",
       title: "Download Link",
       type: "url",
-      validation: (Rule: any) => Rule.require(),
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: "views",
@@ -32,7 +32,7 @@ const schema = {
       name: "poster",
       title: "Poster",
       type: "image",
-      validation: (Rule: any) => Rule.require(),
+      validation: (Rule: any) => Rule.required(),
       options: {
         hotspot: true,
       },
@@ -40,7 +40,7 @@ const schema = {
     { name: "category",
       title: "Category",
       type: "string",
-      validation: (Rule: any) => Rule.require(),
+      validation: (Rule: any) => Rule.required(),
       options:{
         list:['React js','Next js','Tailwind css','Node js','others']
       }

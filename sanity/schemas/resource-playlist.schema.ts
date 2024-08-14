@@ -2,12 +2,12 @@ const schema = {
     name:'resourcePlaylist',
     title:'Resource Playlist',
     type:'document',
-    field:[
+    fields:[
         {
             name:'title',
             title:'Title',
             type:'string',
-            validation:(Rule:any)=>Rule.require()
+            validation:(Rule:any)=>Rule.required()
         },
         {
             name:'resources',
