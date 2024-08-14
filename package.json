@@ -16,10 +16,12 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.427.0",
     "next": "14.2.5",
+    "next-sanity": "^9.4.5",
     "query-string": "^9.1.0",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.53.0",
+    "styled-components": "^6.1.12",
     "tailwind-merge": "^2.5.1",
     "tailwindcss-animate": "^1.0.7"
   },
