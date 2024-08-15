@@ -4,11 +4,11 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="w-full fixed top-0 z-50 py-8 items-center border-b-2 border-black-200 text-white">
+    <nav className="w-full fixed top-0 z-50 py-8 items-center border-b-2 border-black-200 bg-black-100 text-white">
       <div className="w-full mx-auto flex justify-between px-6 max-w-screen-2xl xs:px-8 sm:px-16">
         <Link href="/">
-          {/* <h1 className="text-3xl text-white font-bold">Paaje</h1> */}
-          <Image src="/jsm-logo.svg" alt="logo" width={55} height={40} />
+          <h1 className="text-2xl text-white font-bold">Paaje</h1>
+          {/* <Image src="/jsm-logo.svg" alt="logo" width={55} height={40} /> */}
         </Link>
         <Image
           src="/hamburger-menu.svg"

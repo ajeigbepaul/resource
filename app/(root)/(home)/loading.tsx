@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Loading = () => {
   return (
-    <div>loading</div>
-  )
-}
+    <main className="flex-center paddings mx-auto w-full max-w-screen-2xl flex-col">
+      <section className="nav-padding w-full">
+        <Skeleton className="h-[274px] w-full rounded-lg" />
+      </section>
+      <section className="mt-6 flex w-full sm:mt-20 flex-col">
+        <Skeleton className="h-10 w-56" />
+        <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
+        <Skeleton className="h-[440px] w-full sm:w-[356px]" />
+        <Skeleton className="h-[440px] w-full sm:w-[356px]" />
+        <Skeleton className="h-[440px] w-full sm:w-[356px]" />
 
-export default Loading
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default Loading;

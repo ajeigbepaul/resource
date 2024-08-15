@@ -42,7 +42,7 @@ const schema = {
       type: "string",
       validation: (Rule: any) => Rule.required(),
       options:{
-        list:['React js','Next js','Tailwind css','Node js','others']
+        list:['reactjs','nextjs','tailwind','nodejs','project-management','others']
       }
     },
   ],
